@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>IAV</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="LOGO3.png" rel="icon">
+  <link href="LOGO3.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS Files -->
+  <link href="assets/css/variables.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="leaflet.css" />
+	<link rel="stylesheet" type="text/css" href="src/L.Control.ZoomBar.css"/>
+	<link rel="stylesheet" href="leaflet.draw.css" />
+	<link rel="stylesheet" href="libs/leaflet-measure-path.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="leaflet.js" ></script>
+	<script type="text/javascript" src="src/L.Control.ZoomBar.js"></script>
+	<script src="Geo.js" ></script>
+	<script src="GEOJSON.js" ></script>
+	<script src="roads.js" ></script>
+	<script src="leaflet.draw.js"></script>
+	<script src="libs/editable.js" ></script>
+	<script src="libs/measure.js"></script>
+	<script src="leaflet.MeasurePolygon.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>IAV</h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="single-post.html">Single Post</a></li>
+          <li class="dropdown"><a href="category.html"><span>Categories</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="search-result.html">Search Result</a></li>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <div class="position-relative">
+        <a href="#" class="mx-2"><span class="bi-facebook"></span></a>
+        <a href="#" class="mx-2"><span class="bi-twitter"></span></a>
+        <a href="#" class="mx-2"><span class="bi-instagram"></span></a>
+
+        <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
+   
+
+        <!-- ======= Search Form ======= -->
+        <div class="search-form-wrap js-search-form-wrap">
+          <form action="search-result.html" class="search-form">
+            <span class="icon bi-search"></span>
+            <input type="text" placeholder="Search" class="form-control">
+            <button class="btn js-search-close"><span class="bi-x"></span></button>
+          </form>
+        </div><!-- End Search Form -->
+
+      </div>
+
+    </div>
+
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Hero Slider Section ======= -->
+    <section id="hero-slider" class="hero-slider">
+      <div class="container-md" data-aos="fade-in">
+        <div class="row">
+          <div class="col-12">
+            <div class="swiper sliderFeaturedPosts">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="single-post.html" class="img-bg d-flex align-items-end" style="background-image: url('1.jpeg');">
+                    <div class="img-bg-inner">
+                      <h2>DISCOURS D'OUVERTURE DE SEM LE MINISTRE DE L'AGRICULTUREAU SALON DE L'IAV HASSAN II - 10 JUIN 2023</h2>
+                      <p></p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="single-post.html" class="img-bg d-flex align-items-end" style="background-image: url('2.jpg');">
+                    <div class="img-bg-inner">
+                      <h2>RÉCEPTION DES PARTICIPANTS AU STAGE DE DÉCOUVERTE DE LA NATURE (JUIN 2023)</h2>
+                      <p></p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="single-post.html" class="img-bg d-flex align-items-end" style="background-image: url('3.jpeg');">
+                    <div class="img-bg-inner">
+                      <h2>DISCOURS D'OUVERTURE DE MR LE DIRECTEUR AZIZ EL HRAIKI AU SALON DE L'IAV HASSAN II - 10 JUIN 2023</h2>
+                      <p></p>
+                    </div>
+                  </a>
+                </div>
+
+             
+                </div>
+              </div>
+              <div class="custom-swiper-button-next">
+                <span class="bi-chevron-right"></span>
+              </div>
+              <div class="custom-swiper-button-prev">
+                <span class="bi-chevron-left"></span>
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Hero Slider Section -->
+
+
+    <!-- ======= Culture Category Section ======= -->
+    <section class="category-section">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header d-flex justify-content-between align-items-center mb-5">
+          <h2>Découvrir IAV</h2>
+          <div><a href="category.html" class="more">Géoportail</a></div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-9">
+
+            <div class="d-lg-flex post-entry-2">
+             
+                
+              <div>
+                <div class="d-flex align-items-center author">
+                  
+                  <div class="name">
+          
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="post-entry-1 border-bottom">
+                  
+                  <h2 class="mb-2"><a href="single-post.html">Institut Agronomique et Vétérinaire Hassan II</a></h2>
+                        <div class="post-meta"><span class="date">Carte</span> <span class="mx-1">&bullet;</span> <span>oct 30th '23</span></div>
+                  
+
+                </div>
+
+                <div class="post-entry-1">
+                 
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="post-entry-1">
+                  <div id="map" style="width: 800px; height: 700px; float: left;"></div>
+	
+		<script type="text/javascript">
+		
+
+		     
+			var map = L.map('map',{
+								minZoom: 4,
+								maxZoom: 18,
+								zoomControl: false
+							}).setView([33.976597160037244, -6.8666530721537375], 16);
+     
+			var zoom_bar = new L.Control.ZoomBar({position: 'topright'}).addTo(map);
+			var tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 19,
+			}).addTo(map);
+	
+			function getCenterAndZoom(){
+					console.log("Lat: "+map.getCenter().lat);
+					console.log("Lon: "+map.getCenter().lng);
+					console.log("Zoom: "+map.getZoom());
+					alert("Lat: "+map.getCenter().lat+"\nLon: "+map.getCenter().lng+"\nZoom: "+map.getZoom());
+				}
+			
+			;
+				
+
+			var marker = L.marker([33.97650914357475, -6.866855528036672]).addTo(map)
+				.bindPopup('<b>Département TOPO</b>').openPopup();
+			var marker = L.marker([33.977331566125734, -6.865807865460502]).addTo(map)
+				.bindPopup('<b>département GR</b>').openPopup();
+			var marker = L.marker([33.97423241881362, -6.868997917662959]).addTo(map)
+				.bindPopup('<b>clinique vétérinaire de l\'IAV HASSAN II</b>').openPopup();
+			var marker = L.marker([33.979929124443345, -6.861822406526897]).addTo(map)
+				.bindPopup('<b>Internat</b>').openPopup();
+			var marker = L.marker([33.980573742316246, -6.864075203942907]).addTo(map)
+				.bindPopup('<b>Administration</b>').openPopup();
+			var marker = L.marker([33.979808090914936, -6.8628408310999305]).addTo(map)
+				.bindPopup('<b>Salle de conférences</b>').openPopup();
+			var marker = L.marker([33.97331402596727, -6.865927736974173]).addTo(map)
+				.bindPopup('<b>Espace sportif</b>').openPopup();	
+			var marker = L.marker([33.97249099914408, -6.8679305795419845]).addTo(map)
+				.bindPopup('<b>Apesa</b>').openPopup();
+			var marker = L.marker([33.9749442232679, -6.866812120234605]).addTo(map)
+				.bindPopup('<b>AGrand amphi AGRO</b>').openPopup();
+			var marker = L.marker([33.97370387294474, -6.867804027965843]).addTo(map)
+				.bindPopup('<b>Département VETO</b>').openPopup();
+			var marker = L.marker([33.97462546469038, -6.866123485072422]).addTo(map)
+				.bindPopup('<b>Département IAA</b>').openPopup();
+			var marker = L.marker([33.97901453877143, -6.863489554298549]).addTo(map)
+				.bindPopup('<b>Département d\'AGRO</b>').openPopup();
+			var popup = L.popup()
+				.setLatLng([33.981646, -6.863968])
+				.setContent('Venez découvrir l\'IAV ! Zoomez ici.')
+				.openOn(map)
+	
+
+			
+			
+			var geojsonFeature = L.geoJSON(geojsonFeature, {style: function (feature) {return {
+                color: 'black',
+                weight: 1,
+			 	fill: false,
+               };}}).addTo(map);
+				 
+;
+
+			var polygon = L.polygon([
+				[33.981646, -6.863968],
+				[33.980685, -6.860737],
+				[33.979262, -6.861901],
+				[33.979739, -6.862634],
+				[33.976554, -6.865810],
+				[33.976192, -6.865899],
+				[33.974718, -6.863829],
+				[33.970779, -6.867448],
+				[33.972466, -6.869958],
+				[33.974116, -6.869747],
+				[33.974654, -6.870606]] ,
+				{
+				  color: 'red',       // Couleur de la ligne du polygone
+				  weight: 2,          // Épaisseur de la ligne
+				  fill: true,         // Remplir le polygone
+				  fillColor: 'none',  // Couleur de remplissage
+				  fillOpacity: 0.5    // Opacité de remplissage
+				})
+               .addTo(map).bindPopup('l\'IAV');
+
+			
+			L.geoJSON(geojsonFeature1).addTo(map);
+			var Bati = L.geoJSON(geojsonFeature1).addTo(map);
+			Bati.eachLayer(function (layer) {layer.bindPopup(layer.feature.properties.name);});
+
+			L.geoJSON(geojsonFeature2 ,  {style: function (feature) {return {
+                color: 'black',
+                weight: 1,
+			 	fill: false,
+               };}}).addTo(map);f
+
+			
+
+
+
+
+			let measurePolygonControl = L.control.measurePolygon();
+			measurePolygonControl.addTo(map);
+		</script>
+              </div>
+              </div>
+            </div>
+          </div>
+           <div>
+                
+                  
+                  <p> </p>
+                  <p> </p>
+                  <p class="mb-4 d-block">... C'est une école d'ingénieurs et de médecins vétérinaires marocaine située à Rabat et créée en 1966. C'est un établissement supérieur de formation et de recherche. Considéré comme établissement chef de file dans les sciences de la nature, il assure trois missions fondamentales intégrées : formation, recherche et développement. Depuis sa création, il a évolué sur le plan institutionnel et a su élargir son rayonnement national, régional et international. Devenu centre polytechnique d’expertise multidisciplinaire, il assure la formation initiale et la formation continue des spécialistes en sciences et technologies du vivant et de la Terre (ingénieurs, vétérinaires, etc.) pour répondre aux besoins en cadres de haut niveau.</p>
+           </div>
+        
+          </div>
+        </div>
+      </div>
+    </section><!-- End Culture Category Section -->
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    
+
+    <div class="footer-legal">
+      <div class="container">
+
+        <div class="row justify-content-between">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <div class="copyright">
+              © Copyright <strong><span>IAV</span></strong>. All Rights Reserved
+            </div>
+
+            <div class="credits">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- You can delete the links only if you purchased the pro version. -->
+              <!-- Licensing information: https://bootstrapmade.com/license/ -->
+              <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
+              Designed by <a href="https://bootstrapmade.com/">Zaineb</a>
+            </div>
+
+          </div>
+
+          <div class="col-md-6">
+            <div class="social-links mb-3 mb-lg-0 text-center text-md-end">
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
